@@ -35,6 +35,11 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
                 SpeakBackground speak = new SpeakBackground();
                 speak.execute();
                 result.success("Success");
+            case "preLoad":
+                text = String.valueOf(call.argument("text"));
+                PreLoadBackgroud preLoad = new PreLoadBackgroud();
+                preLoad.execute();
+                result.success("Success");
             default:
                 break;
         }
@@ -43,6 +48,8 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
     StreamPlayer streamPlayer;
     TextToSpeech textToSpeech;
     String text;
+    InputStream preLoad;
+    String textOnPreLoad;
 
     private void initTextToSpeechService(String apiKey){
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
@@ -57,7 +64,7 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
         textToSpeech = service;
     }
 
-    private void speak(String text){
+    private void preLoad(String text){
         if(text != null && text != "null"){
             SynthesizeOptions synthesizeOptions = new SynthesizeOptions.Builder()
                     .text(text)
@@ -66,21 +73,51 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
                     .build();
 
             InputStream service = textToSpeech.synthesize(synthesizeOptions).execute().getResult();
+            textOnPreLoad = text;
+        }
+    }
 
-            streamPlayer.playStream(service);
+    private void speak(String text){
+        if(text != textOnPreLoad) {
+            if (text != null && text != "null") {
+                SynthesizeOptions synthesizeOptions = new SynthesizeOptions.Builder()
+                        .text(text)
+                        .accept("audio/wav")
+                        .voice(SynthesizeOptions.Voice.PT_BR_ISABELAV3VOICE)
+                        .build();
+
+                preLoad = textToSpeech.synthesize(synthesizeOptions).execute().getResult();
+
+                streamPlayer.playStream(preLoad);
+            }
+        } else {
+            streamPlayer.playStream(preLoad);
         }
     }
 
     private class SpeakBackground extends AsyncTask<String, Void, Void>{
         @Override
         protected Void doInBackground(String... params) {
-            if(text != null && text != "null") speak(text);
+            speak(text);
             return null;
         }
 
         @Override
         protected void onPostExecute(Void aVoid) {
             streamPlayer.interrupt();
+            super.onPostExecute(aVoid);
+        }
+    }
+
+    private class PreLoadBackgroud extends AsyncTask<String, Void, Void>{
+        @Override
+        protected Void doInBackground(String... params) {
+            preLoad(text);
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
         }
     }

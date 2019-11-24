@@ -16,4 +16,11 @@ class FlutterWatsonTts {
       return message;
     } return "Text null";
   }
+
+  Future<String> preLoad(String text) async{
+    if(text != null){
+      final String message = await _channel.invokeMethod("preLoad", {"text" : text});
+      return message;
+    } return "Text null";
+  }
 }
