@@ -19,60 +19,62 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /** FlutterWatsonTtsPlugin */
 public class FlutterWatsonTtsPlugin implements MethodCallHandler {
-  /** Plugin registration. */
-  public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_watson_tts");
-    channel.setMethodCallHandler(new FlutterWatsonTtsPlugin());
-  }
-
-  @Override
-  public void onMethodCall(MethodCall call, Result result) {
-    switch (call.method) {
-        case "init":
-        initTextToSpeechService(String.valueOf(call.argument("apiKey")));
-      case "speak":
-        text = String.valueOf(call.argument("text"));
-        SpeakBackground speak = new SpeakBackground();
-        speak.execute();
-        result.success("Success");
-      default:
-        break;
+    /** Plugin registration. */
+    public static void registerWith(Registrar registrar) {
+        final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_watson_tts");
+        channel.setMethodCallHandler(new FlutterWatsonTtsPlugin());
     }
-  }
 
-  StreamPlayer streamPlayer;
-  TextToSpeech textToSpeech;
-  String text;
+    @Override
+    public void onMethodCall(MethodCall call, Result result) {
+        switch (call.method) {
+            case "init":
+                initTextToSpeechService(String.valueOf(call.argument("apiKey")));
+            case "speak":
+                text = String.valueOf(call.argument("text"));
+                SpeakBackground speak = new SpeakBackground();
+                speak.execute();
+                result.success("Success");
+            default:
+                break;
+        }
+    }
 
-  private void initTextToSpeechService(String apiKey){
-      StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
-              .permitAll().build();
-      StrictMode.setThreadPolicy(policy);
-      IamAuthenticator options = new IamAuthenticator(apiKey);
+    StreamPlayer streamPlayer;
+    TextToSpeech textToSpeech;
+    String text;
 
-      TextToSpeech service = new TextToSpeech(options);
-      service.setServiceUrl("https://stream.watsonplatform.net/text-to-speech/api");
+    private void initTextToSpeechService(String apiKey){
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                .permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+        IamAuthenticator options = new IamAuthenticator(apiKey);
 
-      streamPlayer = new StreamPlayer();
-      textToSpeech = service;
-  }
+        TextToSpeech service = new TextToSpeech(options);
+        service.setServiceUrl("https://stream.watsonplatform.net/text-to-speech/api");
 
-  private void speak(String text){
-      SynthesizeOptions synthesizeOptions = new SynthesizeOptions.Builder()
-              .text(text)
-              .accept("audio/wav")
-              .voice(SynthesizeOptions.Voice.PT_BR_ISABELAV3VOICE)
-              .build();
+        streamPlayer = new StreamPlayer();
+        textToSpeech = service;
+    }
 
-      InputStream service = textToSpeech.synthesize(synthesizeOptions).execute().getResult();
+    private void speak(String text){
+        if(text != null && text != "null"){
+            SynthesizeOptions synthesizeOptions = new SynthesizeOptions.Builder()
+                    .text(text)
+                    .accept("audio/wav")
+                    .voice(SynthesizeOptions.Voice.PT_BR_ISABELAV3VOICE)
+                    .build();
 
-      streamPlayer.playStream(service);
-  }
+            InputStream service = textToSpeech.synthesize(synthesizeOptions).execute().getResult();
+
+            streamPlayer.playStream(service);
+        }
+    }
 
     private class SpeakBackground extends AsyncTask<String, Void, Void>{
         @Override
         protected Void doInBackground(String... params) {
-            speak(text);
+            if(text != null && text != "null") speak(text);
             return null;
         }
 
