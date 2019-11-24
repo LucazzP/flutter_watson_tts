@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="44b1739a-4124-4d43-8de2-5337324de133" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../languages/flutter" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../languages/flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Pessoais/onde_reciclo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Pessoais/onde_reciclo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Pessoais/responsive_widgets" beforeDir="false" afterPath="$PROJECT_DIR$/../../Pessoais/responsive_widgets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Pessoais/undefined_game" beforeDir="false" afterPath="$PROJECT_DIR$/../../Pessoais/undefined_game" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app_template_flutter" beforeDir="false" afterPath="$PROJECT_DIR$/../../app_template_flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dod/iam-app" beforeDir="false" afterPath="$PROJECT_DIR$/../../dod/iam-app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dod/tv-digital" beforeDir="false" afterPath="$PROJECT_DIR$/../../dod/tv-digital" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dod/tv-digital-adm" beforeDir="false" afterPath="$PROJECT_DIR$/../../dod/tv-digital-adm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../totem/Gabul-ADM" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/Gabul-ADM" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../totem/custom_icons" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/custom_icons" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../totem/totem_app" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/totem_app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web/iSeek" beforeDir="false" afterPath="$PROJECT_DIR$/../../../web/iSeek" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web/react/MindFlow" beforeDir="false" afterPath="$PROJECT_DIR$/../../../web/react/MindFlow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web/react/profitcrypto" beforeDir="false" afterPath="$PROJECT_DIR$/../../../web/react/profitcrypto" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.dart_tool/" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <ignored path="$PROJECT_DIR$/.pub/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/example/.pub/" />
+    <ignored path="$PROJECT_DIR$/example/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-154">
+              <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/android/build.gradle" />
+        <option value="$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="188" />
+    <option name="y" value="23" />
+    <option name="width" value="2157" />
+    <option name="height" value="1001" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flutter_watson_tts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_watson_tts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_watson_tts" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_watson_tts" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_watson_tts" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="flutter_watson_tts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44b1739a-4124-4d43-8de2-5337324de133" name="Default Changelist" comment="" />
+      <created>1574558702618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574558702618</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="188" y="23" width="2157" height="1001" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2397163" />
+      <window_info id="Captures" order="1" side_tool="true" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Build Variants" order="5" side_tool="true" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Dart Analysis" order="0" visible="true" weight="0.32893288" />
+      <window_info anchor="bottom" id="Run" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" order="4" />
+      <window_info anchor="bottom" id="Debug" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Flutter Inspector" order="3" />
+      <window_info anchor="right" id="Flutter Outline" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/flutter_watson_tts.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
