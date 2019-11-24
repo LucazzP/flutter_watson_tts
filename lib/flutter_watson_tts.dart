@@ -11,7 +11,9 @@ class FlutterWatsonTts {
   }
 
   Future<String> speak(String text) async{
-    final String message = await _channel.invokeMethod("speak", {"text" : text});
-    return message;
+    if(text != null){
+      final String message = await _channel.invokeMethod("speak", {"text" : text});
+      return message;
+    } return "Text null";
   }
 }
