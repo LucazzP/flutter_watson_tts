@@ -10,7 +10,7 @@
       <change beforePath="$PROJECT_DIR$/../../dod/iam-app" beforeDir="false" afterPath="$PROJECT_DIR$/../../dod/iam-app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../dod/tv-digital" beforeDir="false" afterPath="$PROJECT_DIR$/../../dod/tv-digital" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../dod/tv-digital-adm" beforeDir="false" afterPath="$PROJECT_DIR$/../../dod/tv-digital-adm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../totem/Gabul-ADM" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/Gabul-ADM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../totem/custom_icons" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/custom_icons" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../totem/totem_app" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/totem_app" afterDir="false" />
@@ -36,23 +36,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="407">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4011#4012#0" expanded="true" />
+                <element signature="e#4061#4062#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/flutter_watson_tts.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="345">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -66,8 +68,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/android/build.gradle" />
-        <option value="$PROJECT_DIR$/lib/flutter_watson_tts.dart" />
         <option value="$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java" />
+        <option value="$PROJECT_DIR$/lib/flutter_watson_tts.dart" />
       </list>
     </option>
   </component>
@@ -184,6 +186,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="188" y="23" width="2157" height="1001" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2397163" />
       <window_info id="Captures" order="1" side_tool="true" />
@@ -200,7 +203,7 @@
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.32893288" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.24972497" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -239,20 +242,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_watson_tts.dart">
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="407">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4011#4012#0" expanded="true" />
+            <element signature="e#4061#4062#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java">
+    <entry file="file://$PROJECT_DIR$/lib/flutter_watson_tts.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
