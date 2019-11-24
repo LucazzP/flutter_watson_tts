@@ -35,11 +35,6 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
                 SpeakBackground speak = new SpeakBackground();
                 speak.execute();
                 result.success("Success");
-            case "preLoad":
-                text = String.valueOf(call.argument("text"));
-                PreLoadBackgroud preLoad = new PreLoadBackgroud();
-                preLoad.execute();
-                result.success("Success");
             default:
                 break;
         }
@@ -48,7 +43,6 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
     StreamPlayer streamPlayer;
     TextToSpeech textToSpeech;
     String text;
-    InputStream preLoad;
     String textOnPreLoad;
 
     private void initTextToSpeechService(String apiKey){
@@ -64,33 +58,16 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
         textToSpeech = service;
     }
 
-    private void preLoad(String text){
-        if(text != null && text != "null"){
+    private void speak(String text){
+        if (text != null && text != "null") {
             SynthesizeOptions synthesizeOptions = new SynthesizeOptions.Builder()
                     .text(text)
                     .accept("audio/wav")
                     .voice(SynthesizeOptions.Voice.PT_BR_ISABELAV3VOICE)
                     .build();
 
-            InputStream service = textToSpeech.synthesize(synthesizeOptions).execute().getResult();
-            textOnPreLoad = text;
-        }
-    }
+            InputStream preLoad = textToSpeech.synthesize(synthesizeOptions).execute().getResult();
 
-    private void speak(String text){
-        if(text != textOnPreLoad) {
-            if (text != null && text != "null") {
-                SynthesizeOptions synthesizeOptions = new SynthesizeOptions.Builder()
-                        .text(text)
-                        .accept("audio/wav")
-                        .voice(SynthesizeOptions.Voice.PT_BR_ISABELAV3VOICE)
-                        .build();
-
-                preLoad = textToSpeech.synthesize(synthesizeOptions).execute().getResult();
-
-                streamPlayer.playStream(preLoad);
-            }
-        } else {
             streamPlayer.playStream(preLoad);
         }
     }
@@ -105,19 +82,6 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
         @Override
         protected void onPostExecute(Void aVoid) {
             streamPlayer.interrupt();
-            super.onPostExecute(aVoid);
-        }
-    }
-
-    private class PreLoadBackgroud extends AsyncTask<String, Void, Void>{
-        @Override
-        protected Void doInBackground(String... params) {
-            preLoad(text);
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
         }
     }
