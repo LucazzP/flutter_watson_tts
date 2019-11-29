@@ -7,7 +7,10 @@ import android.os.StrictMode;
 import com.ibm.cloud.sdk.core.security.IamAuthenticator;
 import com.ibm.watson.developer_cloud.android.library.audio.StreamPlayer;
 import com.ibm.watson.text_to_speech.v1.TextToSpeech;
+import com.ibm.watson.text_to_speech.v1.model.Marks;
 import com.ibm.watson.text_to_speech.v1.model.SynthesizeOptions;
+import com.ibm.watson.text_to_speech.v1.model.Timings;
+import com.ibm.watson.text_to_speech.v1.websocket.SynthesizeCallback;
 
 import java.io.InputStream;
 
@@ -25,25 +28,25 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
         channel.setMethodCallHandler(new FlutterWatsonTtsPlugin());
     }
 
+    StreamPlayer streamPlayer;
+    TextToSpeech textToSpeech;
+    String text;
+    Result result;
+
     @Override
     public void onMethodCall(MethodCall call, Result result) {
         switch (call.method) {
             case "init":
                 initTextToSpeechService(String.valueOf(call.argument("apiKey")));
             case "speak":
-                text = String.valueOf(call.argument("text"));
+                this.result = result;
+                this.text = String.valueOf(call.argument("text"));
                 SpeakBackground speak = new SpeakBackground();
-                speak.execute();
-                result.success("Success");
+                speak.execute(this.text);
             default:
                 break;
         }
     }
-
-    StreamPlayer streamPlayer;
-    TextToSpeech textToSpeech;
-    String text;
-    String textOnPreLoad;
 
     private void initTextToSpeechService(String apiKey){
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
@@ -61,8 +64,8 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
     private void speak(String text){
         if (text != null && text != "null") {
             SynthesizeOptions synthesizeOptions = new SynthesizeOptions.Builder()
-                    .text(text)
                     .accept("audio/wav")
+                    .text(text)
                     .voice(SynthesizeOptions.Voice.PT_BR_ISABELAV3VOICE)
                     .build();
 
@@ -75,13 +78,15 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
     private class SpeakBackground extends AsyncTask<String, Void, Void>{
         @Override
         protected Void doInBackground(String... params) {
-            speak(text);
+            System.out.println(params[0]);
+            speak(params[0]);
             return null;
         }
 
         @Override
         protected void onPostExecute(Void aVoid) {
             streamPlayer.interrupt();
+            if(result != null) result.success("Success");
             super.onPostExecute(aVoid);
         }
     }
