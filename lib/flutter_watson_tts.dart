@@ -2,9 +2,19 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-class FlutterWatsonTts {
+class FlutterWatsonTts{
   static const MethodChannel _channel =
       const MethodChannel('flutter_watson_tts');
+
+  FlutterWatsonTts(){
+    _channel.setMethodCallHandler((call) async{
+      if(call.method == 'doOnReady'){
+        _doOnReady();
+      }
+    });
+  }
+
+  Function doOnReady;
 
   Future init(String apiKey) async {
     await _channel.invokeMethod("init", {"apiKey": apiKey});
@@ -20,5 +30,13 @@ class FlutterWatsonTts {
         return e;
       }
     } return "Text null";
+  }
+
+  void _doOnReady(){
+    if(doOnReady != null) doOnReady();
+  }
+
+  Future dispose() async {
+    await _channel.invokeMethod('dispose');
   }
 }
