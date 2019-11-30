@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44b1739a-4124-4d43-8de2-5337324de133" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/StreamPlayerMy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../languages/flutter" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../languages/flutter" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Pessoais/onde_reciclo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Pessoais/onde_reciclo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Pessoais/responsive_widgets" beforeDir="false" afterPath="$PROJECT_DIR$/../../Pessoais/responsive_widgets" afterDir="false" />
@@ -13,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/polazzo/dev/flutter_watson_tts/FlutterWatsonTtsPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_watson_tts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_watson_tts.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../totem/Gabul-ADM" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/Gabul-ADM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../totem/custom_icons" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/custom_icons" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../totem/totem_app" beforeDir="false" afterPath="$PROJECT_DIR$/../../totem/totem_app" afterDir="false" />
@@ -39,20 +39,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="10.1_WXGA_Tablet_API_25" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/flutter_watson_tts.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="178">
+              <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -76,7 +67,7 @@
     <option name="x" value="26" />
     <option name="y" value="23" />
     <option name="width" value="1922" />
-    <option name="height" value="1001" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -84,7 +75,39 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
+              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="flutter_watson_tts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,38 +152,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
-              <item name="flutter_watson_tts" type="e9137016:NonAndroidModuleNode" />
-            </path>
-            <path>
-              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
-              <item name="flutter_watson_tts" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
-              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
-            </path>
-            <path>
-              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
-              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="flutter_watson_tts" type="1abcf292:AndroidViewProjectNode" />
-              <item name="flutter_watson_tts_android" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="flutter_watson_tts" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +190,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="23" width="1922" height="1001" extended-state="0" />
+    <frame x="26" y="23" width="1922" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26968086" />
@@ -212,7 +203,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32893288" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.32893288" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.3296582" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" />
@@ -277,17 +268,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+    <entry file="file://$PROJECT_DIR$/lib/flutter_watson_tts.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+        <state relative-caret-position="225">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_watson_tts.dart">
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="178">
+          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
         </state>
       </provider>
     </entry>

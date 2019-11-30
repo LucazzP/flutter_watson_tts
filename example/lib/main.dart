@@ -78,7 +78,7 @@ class _AnotherPageState extends State<AnotherPage> {
           children: <Widget>[
             RaisedButton(
               onPressed: () async {
-                print(await tts.speak("Olá Fernanda"));
+                print(await tts.speak("Olá, tudo bem? Eu tenho uma novidade para apresentar pra você. Poderia digitar o seu CPF, por favor?"));
               },
               child: Text("Speak"),
             ),

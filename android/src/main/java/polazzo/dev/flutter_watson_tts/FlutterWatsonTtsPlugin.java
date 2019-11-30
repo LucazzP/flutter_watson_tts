@@ -12,6 +12,7 @@ import com.ibm.watson.text_to_speech.v1.model.Marks;
 import com.ibm.watson.text_to_speech.v1.model.SynthesizeOptions;
 import com.ibm.watson.text_to_speech.v1.model.Timings;
 import com.ibm.watson.text_to_speech.v1.websocket.SynthesizeCallback;
+import com.sun.jna.Function;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -38,7 +39,7 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
         this.methodChannel.setMethodCallHandler(this);
     }
 
-    StreamPlayer streamPlayer;
+    StreamPlayerMy streamPlayer;
     TextToSpeech textToSpeech;
     String text;
     Result result;
@@ -63,8 +64,6 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
         }
     }
 
-
-
     private void initTextToSpeechService(String apiKey){
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
                 .permitAll().build();
@@ -74,7 +73,17 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
         TextToSpeech service = new TextToSpeech(options);
         service.setServiceUrl("https://stream.watsonplatform.net/text-to-speech/api");
 
-        streamPlayer = new StreamPlayer();
+        streamPlayer = new StreamPlayerMy(new DoOnReadyListener() {
+            @Override
+            public void doOnReady() {
+                context.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        methodChannel.invokeMethod("doOnReady", "");
+                    }
+                });
+            }
+        });
         textToSpeech = service;
     }
 
@@ -108,7 +117,6 @@ public class FlutterWatsonTtsPlugin implements MethodCallHandler {
         @Override
         protected void onPostExecute(Void aVoid) {
             if(!_disposed && preLoad != null) {
-                methodChannel.invokeMethod("doOnReady", "");
                 StreamPlayerBackground streamPlayerBackground = new StreamPlayerBackground();
                 streamPlayerBackground.execute(preLoad);
             }
